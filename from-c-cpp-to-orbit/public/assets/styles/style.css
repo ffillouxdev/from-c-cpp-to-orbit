@@ -1,0 +1,31 @@
+/* public/assets/styles/style.css */
+
+/*
+utils:
+padding: top right bottom left;
+*/
+body {
+    background-color: gray;
+    padding: 5vh 10vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.layout__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.layout__header-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.layout__main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
