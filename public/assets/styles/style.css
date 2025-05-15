@@ -226,7 +226,8 @@ body {
 @media (max-width: 1400px) {
   .layout__main {
     display: block;
-    grid-template-columns:none;
+    grid-template-columns: none;
+    padding: 0 1rem;  
   }
 
   .layout__grid-1,
@@ -235,6 +236,10 @@ body {
   }
 
   .layout__grid-2 {
-    width: 90vw; 
+    width: 100%;  
+    padding-left: 0;   
+    padding-right: 0;
+    margin: 0 auto;
+    box-sizing: border-box;  
   }
 }
