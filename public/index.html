@@ -12,19 +12,64 @@
   <title>C / C++ | FILLOUX Florian</title>
 </head>
 <body>
-  <header class="layout__header">
-    <img class="layout__header-logo" src="./assets/imgs/logo-icon.png" alt="Logo du site représentant une fusée" />
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </header>
-
+  <div id="top"></div>
+  <site-header></site-header>
   <main class="layout__main">
-    <h1>Projet 'from C / C++ to orbit'</h1>
-
+    <div class="layout__grid-1">
+      <div class="layout-grid-container"> 
+        <section-details title="INTRODUCTION"></section-details>
+      </div>
+    </div>
+    <div class="layout__grid-2">
+      <div class="layout-grid-container">
+        <h1>Projet 'from C / C++ to orbit' 🚀</h1>
+        <hr class="layout__hr hr-blue">
+        <p>Souhaitant m'orienter vers le secteur spatial, j'ai développé un intérêt pour l'optimisation et la programmation bas niveau. Je vous présente ici l'ensemble de mes projets que je juge pertinents pour intégrer ce domaine.</p>
+        <div id="lycee">
+          <h2>Premiers pas au lycée en C++</h2>
+          <hr class="layout__hr">
+          <p>Pour mon année de terminale en STI2D (2021-2022), j'avais choisi l'option SIN, qui permettait de faire de l'électronique, de programmer sur des Arduino UNO, tout en apprenant relativement bien le C++.</p>
+        </div>
+        <div id="but1">
+          <h2>Premiers pas en BUT 1 en C</h2>
+          <hr class="layout__hr">
+          <p>Lors de mon premier semestre de Bachelor Universitaire Technologique, nous avons commencer la programmation en découvrant le langage C (ANSI et C99)</p>
+          <ul>
+            <li><strong>Gestion des bases du langage C  <i class="icon-style" data-lucide="square-function"></i> :</strong> variables, types, conditions, boucles et fonctions.</li>
+            <li><strong>Manipulation de structures de données <i class="icon-style" data-lucide="brackets"></i> :</strong> tableaux, structures (struct) et pointeurs.</li>
+            <li><strong>Gestion dynamique de la mémoire <i class="icon-style" data-lucide="cpu"></i> :</strong> utilisation de malloc et free pour optimiser l'allocation des ressources.</li>
+            <li><strong>Modularité du code  <i class="icon-style" data-lucide="monitor-check"></i> :</strong> séparation des fichiers source (.c) et d'en-tête (.h) pour une meilleure organisation.</li>
+            <li><strong>Approche algorithmique :</strong> conception d'algorithmes pour gérer les données aériennes (vols, passagers, etc.).</li>
+            <li><strong>Gestion des fichiers <i class="icon-style" data-lucide="files"></i> :</strong> utilisation de fichiers CSV et TXT pour la sauvegarde et le chargement des données persistantes.</li>
+            <li><strong>Débogage et tests  <i class="icon-style" data-lucide="shield-check"></i> :</strong> assurance de la robustesse du programme et prévention des erreurs de segmentation grâce à l'utilisation d'assert.</li>
+            <li><strong>Normes ANSI C et C99 :</strong> découverte et application des bonnes pratiques de codage.</li>
+            <li><strong>Librairies <i class="icon-style" data-lucide="library"></i> :</strong> stdio.h, stdlib.h, sys/types.h, assert.h, windows.h, string.h, time.h</li>
+          </ul>
+        </div>
+        <div id="spatial1">
+          <h2>Premiers pas dans le spatial 🛰️</h2>
+          <hr class="layout__hr">
+          <p>
+            J'ai réalisé ma première expérience professionnelle au <a target="_blank" href="https://csum.umontpellier.fr/">Centre Spatial de l'Université de Montpellier</a>. Cette expérience m'a beaucoup plu et a renforcé ma volonté d'évoluer dans ce domaine. 
+            J'ai donc décidé de réduire mon temps consacré au développement web (principalement appris en cours) pour me recentrer davantage sur l'ingénierie logicielle.
+          </p>
+        </div>
+        <div id="mai2025">
+          <h2>Mai 2025 - Réappropriation C / C++</h2>
+          <hr class="layout__hr">
+          <p>J'ai décidé de reprendre ces langages pour pouvoir être totalement compétent et apte à travailler dans le secteur.</p>
+          <ul class="number-li">
+            <li>J'ai repris les bases l'optimisation et de l'allocation car c'est un sujet primordiale dans ce domaine.</li>
+            <li>J'ai passé une certification speciale.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="layout__grid-3">
+      <div class="layout-grid-container">
+        <section-details title="PROJETS"></section-details>
+      </div>
+    </div>
   </main>
   <site-footer></site-footer>
   <script src="./web-components/header.js" defer></script>
