@@ -4,18 +4,69 @@
 utils:
 padding: top right bottom left;
 */
-body {
-    background-color: gray;
-    padding: 5vh 10vh;
-    margin: 0;
-    font-family: sans-serif;
+
+:root {
+  --background-color: #0b0f1a;           
+  --primary-color: #1f2633;            
+  --secondary-color: #ffffff;           
+  --primary-text-color: #e8f1f9;        
+  --secondary-text-color: #0b0f1a;       
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Merriweather", serif;
+  --border-radius: 5px;
 }
 
+
+.montserrat-regular {
+  font-family: var(--primary-font);
+  font-optical-sizing: auto;
+  font-weight: 400;  
+  font-style: normal;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--secondary-font, sans-serif);
+}
+
+p, li, a {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.layout__hr {
+    border: none;
+    height: 2px;
+    background-color: var(--primary-color);
+    width: 100%;
+    opacity: 1;
+}
+
+.hr-blue {
+    background-color: blue;
+}
+
+body {
+  font-family: var(--primary-font, sans-serif); 
+  background-color: var(--background-color);
+  background: 
+    linear-gradient(#0000004b, #0000004b),  
+    url('../imgs/bg.webp');                 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  margin: 0;
+  color: var(--primary-text-color);
+}
+/************HEADER************/
 .layout__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    margin: 1.5rem;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .layout__header-logo {
@@ -23,9 +74,138 @@ body {
     width: 40px;
 }
 
+.layout__nav {
+    display: flex;
+    gap: 5px;
+}
+
+/************MAIN************/
 .layout__main {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    padding: 2vh 10vh;
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    gap: 20px;
+    align-items: start;      
+    justify-items: center;     
+}
+
+@media (max-width: 768px) {
+  .layout__main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.layout__grid-1,
+.layout__grid-3 {
+  position: sticky;
+  top: 10px;
+  min-height: 5vh;
+  height: auto;  
+  width: 100%;
+}
+
+.layout__grid-2{
+    position: relative;
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    border-radius: var(--border-radius);
+    color : var(--secondary-text-color);
+}
+
+.layout-grid-container{
+    margin: 10px 50px;
+}
+
+.layout-grid-container p {
+    margin: 40px 0px;
+}
+
+.layout-grid-container ul > li {
+  margin-bottom: 15px;
+}
+
+.layout-grid-container ul > li:last-child {
+  margin-bottom: 40px;
+}
+/************SECTION SELECT************/
+.section-details {
+    font-family: var(--primary-font, sans-serif);
+    background-color: var(--secondary-color, white);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    cursor: pointer;
+    color: var(--secondary-text-color);
+}
+
+.section-details summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.section-details summary::marker {
+    display: none;
+    content: "";
+}
+
+.section-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.section-details li {
+    margin: 0.5rem 0;
+}
+
+.section-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.section-details a:hover {
+    text-decoration: underline;
+}
+
+
+/*************FOOTER**************/
+.layout__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  gap: 1rem;
+  margin-top: 50px;
+}
+
+.layout__footer-logo {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.layout__nav {
+  display: flex;
+  gap: 15px;
+}
+
+.layout__nav a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.layout__nav a:hover {
+  text-decoration: underline;
 }
