@@ -6,3 +6,4 @@ For public:
 
 - CSS
 - HTML
+- Icons lucide
