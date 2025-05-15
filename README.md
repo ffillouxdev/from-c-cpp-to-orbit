@@ -2,8 +2,8 @@
 
 **Stack:**
 
-For public:
+- For public:
 
-- CSS
-- HTML
-- Icons lucide
+  - CSS
+  - HTML
+  - Icons lucide
