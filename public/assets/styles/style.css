@@ -105,12 +105,6 @@ body {
   justify-items: center;
 }
 
-@media (max-width: 768px) {
-  .layout__main {
-    grid-template-columns: 1fr;
-  }
-}
-
 .layout__grid-1,
 .layout__grid-3 {
   position: sticky;
@@ -229,9 +223,10 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .layout__main {
     display: block;
+    grid-template-columns:none;
   }
 
   .layout__grid-1,
