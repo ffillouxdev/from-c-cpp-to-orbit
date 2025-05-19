@@ -1,0 +1,33 @@
+# Binaires générés
+/build/
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# Fichiers de log ou de debug
+*.log
+*.gch
+*.swp
+*.dSYM/
+core
+
+# Fichiers générés par l'éditeur
+*.~ 
+*.bak
+*#
+
+# MacOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# Makefiles temporaires (si générés)
+Makefile~
+
+# Compilation à la volée
+*.obj
+src/orbit.csv
