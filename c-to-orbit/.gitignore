@@ -30,4 +30,4 @@ Makefile~
 
 # Compilation à la volée
 *.obj
-src/orbit.csv
+orbit.csv
