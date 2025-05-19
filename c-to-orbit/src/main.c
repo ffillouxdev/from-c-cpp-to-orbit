@@ -13,10 +13,20 @@ enum {
 };
 
 /**
- * Projet c-to-orbit
+ * Projet c-to-orbit: Simulation d'une orbite autour de la Terre 
+ * pour un satellite de 1000kg
  */
 int main()
 {
+    /**
+     * Simulation d'une orbite autour de la Terre
+     * pos_x, pos_y : position du satellite
+     * vel_x, vel_y : vitesse du satellite
+     * acc_x, acc_y : accélération du satellite
+     * time : temps écoulé
+     * r : distance au centre de la Terre
+     * force : force gravitationnelle
+     */
     double pos_x, pos_y;
     double vel_x, vel_y;
     double acc_x, acc_y;
@@ -58,6 +68,7 @@ int main()
         pos_x += vel_x * DT;
         pos_y += vel_y * DT;
 
+        // Enregistrement des données dans le fichier
         fprintf(file, "%f,%f,%f,%f,%f\n", time, pos_x, pos_y, vel_x, vel_y);
         time += DT;
     }
