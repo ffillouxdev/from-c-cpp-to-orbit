@@ -1,5 +1,9 @@
 # Project "From C / C++ to Orbit"
+--
 
+![logo](public/assets/imgs/logo-icon.png)
+
+--
 **Stack:**
 
 - For public:
